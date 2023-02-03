@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projets",
+  "info": {
+    "singularName": "projet",
+    "pluralName": "projets",
+    "displayName": "Projet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "sequences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sequence.sequence"
+    },
+    "sequence": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sequence.sequence",
+      "mappedBy": "projet"
+    }
+  }
+}

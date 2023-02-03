@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_asset_management_assets",
+  "info": {
+    "displayName": "asset"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "src": {
+      "type": "string"
+    },
+    "styles": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

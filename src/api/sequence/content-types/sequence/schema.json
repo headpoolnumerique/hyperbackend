@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sequences",
+  "info": {
+    "singularName": "sequence",
+    "pluralName": "sequences",
+    "displayName": "Sequence",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "plans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plan.plan",
+      "mappedBy": "sequence"
+    },
+    "projet": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::projet.projet",
+      "inversedBy": "sequence"
+    },
+    "css": {
+      "type": "text"
+    },
+    "cssrules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cssrule.cssrule",
+      "mappedBy": "sequence"
+    }
+  }
+}
