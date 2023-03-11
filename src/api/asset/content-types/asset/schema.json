@@ -29,6 +29,15 @@
       "relation": "manyToMany",
       "target": "api::plan.plan",
       "inversedBy": "assets"
+    },
+    "cssrule": {
+      "type": "string"
+    },
+    "objects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::object.object",
+      "inversedBy": "assets"
     }
   }
 }

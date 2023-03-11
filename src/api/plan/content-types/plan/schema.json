@@ -29,6 +29,12 @@
       "relation": "manyToMany",
       "target": "api::asset.asset",
       "mappedBy": "plans"
+    },
+    "objects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::object.object",
+      "mappedBy": "plan"
     }
   }
 }

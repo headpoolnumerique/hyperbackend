@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objects",
+  "info": {
+    "singularName": "object",
+    "pluralName": "objects",
+    "displayName": "object",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "assets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::asset.asset",
+      "mappedBy": "objects"
+    },
+    "top": {
+      "type": "string"
+    },
+    "left": {
+      "type": "string"
+    },
+    "right": {
+      "type": "string"
+    },
+    "bottom": {
+      "type": "string"
+    },
+    "sourceVertical": {
+      "type": "string"
+    },
+    "sourceHorizontal": {
+      "type": "string"
+    },
+    "width": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plan.plan",
+      "inversedBy": "objects"
+    }
+  }
+}
