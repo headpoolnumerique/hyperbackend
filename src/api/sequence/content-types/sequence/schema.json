@@ -24,12 +24,6 @@
       "target": "api::plan.plan",
       "mappedBy": "sequence"
     },
-    "projet": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::projet.projet",
-      "inversedBy": "sequence"
-    },
     "css": {
       "type": "text"
     },
@@ -38,6 +32,12 @@
       "relation": "oneToMany",
       "target": "api::cssrule.cssrule",
       "mappedBy": "sequence"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "sequences"
     }
   }
 }

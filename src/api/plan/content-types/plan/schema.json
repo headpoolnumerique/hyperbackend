@@ -35,6 +35,9 @@
       "relation": "oneToMany",
       "target": "api::object.object",
       "mappedBy": "plan"
+    },
+    "delay": {
+      "type": "decimal"
     }
   }
 }

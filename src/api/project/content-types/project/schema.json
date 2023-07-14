@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "projets",
+  "collectionName": "projects",
   "info": {
-    "singularName": "projet",
-    "pluralName": "projets",
-    "displayName": "Projet",
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project",
     "description": ""
   },
   "options": {
@@ -21,13 +21,12 @@
     "sequences": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::sequence.sequence"
-    },
-    "sequence": {
-      "type": "relation",
-      "relation": "oneToOne",
       "target": "api::sequence.sequence",
-      "mappedBy": "projet"
+      "mappedBy": "project"
+    },
+    "archived": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
