@@ -36,10 +36,10 @@
     "bottom": {
       "type": "string"
     },
-    "sourceVertical": {
+    "anchorVertical": {
       "type": "string"
     },
-    "sourceHorizontal": {
+    "anchorHorizontal": {
       "type": "string"
     },
     "width": {

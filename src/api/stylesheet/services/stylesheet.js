@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * cssrule service
+ * stylesheet service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::cssrule.cssrule');
+module.exports = createCoreService('api::stylesheet.stylesheet');

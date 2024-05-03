@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_cssrule_cssrules",
+  "info": {
+    "displayName": "cssrule",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "object": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::object.object"
+    },
+    "cssrules": {
+      "type": "richtext"
+    },
+    "anchorVertical": {
+      "type": "string"
+    },
+    "anchorHorizontal": {
+      "type": "string"
+    }
+  }
+}

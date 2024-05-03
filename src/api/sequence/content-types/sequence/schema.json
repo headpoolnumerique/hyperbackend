@@ -27,17 +27,17 @@
     "css": {
       "type": "text"
     },
-    "cssrules": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::cssrule.cssrule",
-      "mappedBy": "sequence"
-    },
     "project": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::project.project",
       "inversedBy": "sequences"
+    },
+    "stylesheets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stylesheet.stylesheet",
+      "mappedBy": "sequenceId"
     }
   }
 }

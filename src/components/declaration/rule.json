@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_declaration_rules",
+  "info": {
+    "displayName": "rule"
+  },
+  "options": {},
+  "attributes": {
+    "property": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stylesheets",
+  "info": {
+    "singularName": "stylesheet",
+    "pluralName": "stylesheets",
+    "displayName": "stylesheet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "maxwidth": {
+      "type": "integer"
+    },
+    "orientation": {
+      "type": "richtext"
+    },
+    "defaultHeight": {
+      "type": "integer"
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "sequenceId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sequence.sequence",
+      "inversedBy": "stylesheets"
+    },
+    "default": {
+      "type": "boolean"
+    },
+    "cssrules": {
+      "type": "text"
+    }
+  }
+}

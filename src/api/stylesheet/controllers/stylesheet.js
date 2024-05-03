@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * cssrule controller
+ * stylesheet controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::cssrule.cssrule');
+module.exports = createCoreController('api::stylesheet.stylesheet');
