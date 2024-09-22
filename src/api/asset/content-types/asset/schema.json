@@ -38,6 +38,12 @@
       "relation": "manyToMany",
       "target": "api::object.object",
       "inversedBy": "assets"
+    },
+    "sequence": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sequence.sequence",
+      "inversedBy": "assets"
     }
   }
 }

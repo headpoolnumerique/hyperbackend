@@ -38,6 +38,18 @@
       "relation": "oneToMany",
       "target": "api::stylesheet.stylesheet",
       "mappedBy": "sequenceId"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "sequence"
+    },
+    "assets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::asset.asset",
+      "mappedBy": "sequence"
     }
   }
 }
